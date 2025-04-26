@@ -16,8 +16,8 @@
 
 <style>
 body {
-  margin: 0; /* Aseguramos que no haya margen en el body */
-  padding: 0; /* Aseguramos que no haya padding en el body */
+  margin: 0; 
+  padding: 0; 
 }
 
 #app {
@@ -26,43 +26,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #333333;
-  position: relative; /* Necesario para posicionar la navegación */
-  width: 100%; /* Aseguramos que #app también ocupe todo el ancho */
+  position: relative; 
+  width: 100%; 
 }
 
 nav.top-full-width-nav-horizontal {
-  background-color: #343a40; /* Un color gris oscuro elegante */
+  background-color: #343a40; 
   color: #ffffff;
-  padding: 15px 20px; /* Añadimos un poco de padding horizontal */
-  position: fixed; /* Posicionamiento fijo en la parte superior */
+  padding: 15px 20px; 
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%; /* Ocupar todo el ancho */
-  z-index: 10; /* Asegurar que esté por encima de otros elementos */
-  display: flex; /* Alinear los enlaces horizontalmente */
-  align-items: center; /* Centrar verticalmente los enlaces */
-  justify-content: flex-start; /* Alinear los elementos al inicio (izquierda) */
+  width: 100%; 
+  z-index: 10; 
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
 }
 
 nav.top-full-width-nav-horizontal a {
   font-weight: bold;
   color: #ffffff;
-  margin-right: 15px; /* Espacio entre enlaces horizontal */
+  margin-right: 15px; 
   text-decoration: none;
   transition: color 0.3s;
 }
 
 nav.top-full-width-nav-horizontal a:last-child {
-  margin-right: 0; /* Eliminar el margen del último enlace */
+  margin-right: 0; 
 }
 
 nav.top-full-width-nav-horizontal a:hover {
-  color: #adb5bd; /* Un gris más claro para el hover */
+  color: #adb5bd; 
 }
 
 main {
-  padding: 20px; /* Restauramos el padding original */
-  margin-top: 60px; /* Ajustar el margen superior para evitar la superposición (ajusta según la altura de tu nav) */
-  width: 100%; /* Aseguramos que main también ocupe todo el ancho */
+  padding: 20px;
+  margin-top: 60px; 
+  width: 100%; 
+}
+nav.top-full-width-nav-horizontal {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center
 }
 </style>

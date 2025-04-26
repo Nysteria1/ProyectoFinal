@@ -11,11 +11,11 @@
   <style scoped>
   .main-banner {
     width: 37.5%;
-    height: auto;
+    height: auto  ;
     border-radius: 10px;
     margin-bottom: 20px;
-    display: block;
+    display: flex;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
   }
   </style>

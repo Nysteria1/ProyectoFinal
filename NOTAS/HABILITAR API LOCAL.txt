@@ -15,3 +15,23 @@ C:\Users\audio\Desktop\Proyecto-de-DW-main\api-backend>npm run dev
 [nodemon] starting `node index.js`
 Servidor escuchando en http://localhost:3000
 ✅ Conexión a la base de datos establecida.
+
+//Instalación NODEMON
+
+
+*Instalar nodemon de manera global*
+
+npm install -g nodemon
+
+*Luego ir a la carpeta raíz de la api*
+C:\Users\audio\Desktop\Proyecto-de-DW-main>cd api-backend
+
+*Instalar nodemon dentro de la api* 
+
+C:\Users\audio\Desktop\Proyecto-de-DW-main\api-backend>npm install --save-dev nodemon
+
+*Por último ejecutar el comando para ejecutar la api*
+
+
+
+

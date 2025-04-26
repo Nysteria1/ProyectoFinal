@@ -46,26 +46,26 @@ export default {
 }
 
 .destino-titulo {
-  margin-bottom: 5px; /* Espacio entre el título y la descripción */
+  margin-bottom: 5px; 
 }
 
 .destino-descripcion {
-  margin-bottom: 10px; /* Espacio entre la descripción y la imagen */
+  margin-bottom: 10px; 
   font-size: 0.9em;
   color: #555;
 }
 
 .destino-imagen-container {
-  max-height: 150px; /* Altura máxima para el contenedor de la imagen (ajusta según necesites) */
-  margin-bottom: 10px; /* Espacio entre la imagen y el precio */
+  max-height: 150px; 
+  margin-bottom: 10px; 
   display: flex;
-  justify-content: center; /* Centrar la imagen horizontalmente dentro del contenedor */
-  align-items: center; /* Centrar la imagen verticalmente dentro del contenedor (si es más pequeña) */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .destino-imagen {
   max-width: 100%;
-  max-height: 100%; /* Asegura que la imagen no exceda el contenedor */
+  max-height: 100%; 
   border-radius: 5px;
 }
 
@@ -73,7 +73,7 @@ export default {
   font-weight: bold;
   font-size: 1.2em;
   color: green;
-  margin-bottom: 10px; /* Espacio entre el precio y el botón */
+  margin-bottom: 10px;
 }
 
 .comprar-btn {
@@ -83,7 +83,7 @@ export default {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: auto; /* Empuja el botón hacia la parte inferior */
+  margin-top: auto; 
 }
 
 .comprar-btn:hover {
