@@ -1,6 +1,6 @@
 <template>
-    <img src="/assets/banner.png" alt="Banner Principal" class="main-banner" />
-  </template>
+  <img src="/assets/banner.png" alt="Banner Principal" class="main-banner" />
+</template>
   
   <script>
   export default {

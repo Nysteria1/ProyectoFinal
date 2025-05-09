@@ -1,8 +1,9 @@
 <template>
   <div class="container">
-    <img src="/assets/banner.png" alt="Banner Principal" class="main-banner" />
-
-    <input v-model="searchQuery" placeholder="Buscar sitio..." class="search-bar" />
+    <div class="banner-container">
+      <img src="/assets/bayTayrona.jpg" alt="Banner Principal" class="main-banner" />
+      <input v-model="searchQuery" placeholder="Buscar sitio..." class="search-bar" />
+    </div>
 
     <div class="tour-container">
       <div v-for="tour in filteredTours" :key="tour.id" class="tour-card">
@@ -112,6 +113,7 @@
       </div>
     </footer>
   </div>
+
 </template>
 
 <script>
@@ -213,46 +215,50 @@ export default {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.banner-container {
+  position: relative; 
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
 .main-banner {
-  width: 45%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 30px;
+  width:1500px;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px
 }
 
 .search-bar {
-  padding: 12px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   width: 60%;
-  margin-bottom: 30px;
+  padding: 12px 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
-.search-bar:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
-}
 
 /* Contenedor de Tours */
 .tour-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 20px;
+  gap: 10px;
+  padding: 10px;
 }
 
 /* Tarjeta de Tour */
 .tour-card {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #a9e08b;
+  border-radius: 20px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
   display: flex;
@@ -269,10 +275,11 @@ export default {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .tour-card > * {
-  padding: 15px;
+  padding: 6.5px;
 }
 
 .tour-card h3 {
@@ -292,7 +299,6 @@ export default {
 .price {
   font-weight: 600;
   color: #28a745;
-  margin-bottom: 15px;
   font-size: 1.2em;
 }
 
@@ -315,7 +321,7 @@ export default {
 }
 
 .comprar-btn {
-  background-color: #28a745; /* Color verde para el botón Comprar */
+  background-color: transparent; /* Color verde para el botón Comprar */
   color: white;
   padding: 10px 20px;
   border: none;
